@@ -1,0 +1,24 @@
+name: Assignment CI
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Confirm runner
+        run: echo "Assignment validation is running on Ubuntu."
+      - name: Validate assignment files
+        shell: bash
+        run: |
+          set -euo pipefail
+          for file in README.md 101465282_gb.txt 101465282_devops.txt 101465282_sdlc.txt .github/PULL_REQUEST_TEMPLATE.md; do
+            test -s "$file" || { echo "Missing or empty file $file"; exit 1; }
+          done
+          if git grep -n -E '^(<<<<<<< |=======|>>>>>>> )' -- '*.txt' '*.md'; then
+            echo "Unresolved conflict markers detected."
+            exit 1
+          fi
+          echo "Required files and conflict checks passed."
+
