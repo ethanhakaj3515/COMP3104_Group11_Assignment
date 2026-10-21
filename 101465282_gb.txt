@@ -3,3 +3,7 @@ Author: Ethan Hakaj (101465282)
 
 George Brown College is a public college in Toronto, Ontario, Canada.
 Its applied learning approach connects classroom concepts with practical skills.
+
+Practical computing projects connect programming, system administration, and
+documentation. A shared Git repository records project development and supports
+review of changes before integration.
