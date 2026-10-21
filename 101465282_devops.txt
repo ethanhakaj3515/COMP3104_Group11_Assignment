@@ -1,0 +1,18 @@
+DevOps Course Concepts
+Author: Ethan Hakaj (101465282)
+
+The supplied assignment mentions both COMP3104 and COMP 2156. This document
+discusses the DevOps topics in the assignment, without assuming identical outlines.
+
+Git records file changes as commits. Descriptive messages explain why a change
+was made. GitHub hosts repositories for sharing work and reviewing changes.
+
+A contributor works on a STUDENTID-Name branch and opens a pull request to main.
+Review and automated checks help identify problems before merging. Fetching and
+merging origin/main keeps a local branch synchronized without rewriting history.
+A conflict requires reviewing both versions and preserving the intended combined
+result before committing the resolution.
+
+CI can run on both push and pull_request events. A failed required-file check
+should be fixed on the member branch before integration. The workflow uses
+read-only repository permissions because validation does not need write access.
