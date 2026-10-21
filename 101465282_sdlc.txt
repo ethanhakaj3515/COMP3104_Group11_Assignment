@@ -1,0 +1,7 @@
+DevOps in the Software Development Lifecycle
+Author: Ethan Hakaj (101465282)
+
+DevOps connects development and operations through shared responsibility,
+automation, and feedback. During planning, teams define requirements and
+acceptance criteria. During implementation, small commits make changes easier
+to inspect and recover.
