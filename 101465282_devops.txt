@@ -6,3 +6,9 @@ discusses the DevOps topics in the assignment, without assuming identical outlin
 
 Git records file changes as commits. Descriptive messages explain why a change
 was made. GitHub hosts repositories for sharing work and reviewing changes.
+
+A contributor works on a STUDENTID-Name branch and opens a pull request to main.
+Review and automated checks help identify problems before merging. Fetching and
+merging origin/main keeps a local branch synchronized without rewriting history.
+A conflict requires reviewing both versions and preserving the intended combined
+result before committing the resolution.
