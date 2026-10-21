@@ -5,3 +5,13 @@ DevOps connects development and operations through shared responsibility,
 automation, and feedback. During planning, teams define requirements and
 acceptance criteria. During implementation, small commits make changes easier
 to inspect and recover.
+
+Continuous integration validates proposed changes automatically. Failures give
+contributors feedback before merging. Continuous delivery prepares validated
+changes for release; continuous deployment also releases them automatically.
+A successful CI check alone does not prove a deployed service is online.
+
+After release, monitoring and incident reviews inform the next planning cycle.
+A rollback restores a known working version during investigation. This text-only
+project checks required files and unresolved conflict markers; it does not
+deploy an application or monitor uptime.
