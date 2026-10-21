@@ -1,0 +1,8 @@
+DevOps Course Concepts
+Author: Ethan Hakaj (101465282)
+
+The supplied assignment mentions both COMP3104 and COMP 2156. This document
+discusses the DevOps topics in the assignment, without assuming identical outlines.
+
+Git records file changes as commits. Descriptive messages explain why a change
+was made. GitHub hosts repositories for sharing work and reviewing changes.
